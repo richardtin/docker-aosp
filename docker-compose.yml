@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  aosp:
+    image: ghcr.io/richardtin/docker-aosp:latest
+    volumes:
+      - ~/aosp/ccache:/tmp/ccache
+      - ~/aosp:/aosp
+      - ~/.gitconfig:/home/aosp/.gitconfig
